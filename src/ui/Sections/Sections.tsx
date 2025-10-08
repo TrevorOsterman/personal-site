@@ -138,7 +138,7 @@ const Sections: React.FC<Props> = ({
           setCurrentSection={setCurrentSection}
         >
           <p>In my spare time, I'm currently working on a project or two.</p>
-          <div className="section__projects__project">
+          <div>
             <h3>
               <i>This Is Not For You</i>
             </h3>
