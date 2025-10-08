@@ -1,0 +1,59 @@
+.sprite {
+  display: flex;
+  margin: auto;
+}
+
+.sprite__text {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 15px;
+  background: linear-gradient(black, black) 4px 0 / calc(100% - 8px) 2px
+      no-repeat,
+    linear-gradient(black, black) 4px calc(100% - 2px) / calc(100% - 8px) 2px
+      no-repeat,
+    linear-gradient(black, black) 0 4px / 2px calc(100% - 8px) no-repeat,
+    linear-gradient(black, black) calc(100% - 2px) 4px / 2px calc(100% - 8px)
+      no-repeat,
+    linear-gradient(black, black) 2px 2px / 2px 2px no-repeat,
+    linear-gradient(black, black) calc(100% - 4px) 2px / 2px 2px no-repeat,
+    linear-gradient(black, black) 2px calc(100% - 4px) / 2px 2px no-repeat,
+    linear-gradient(black, black) calc(100% - 4px) calc(100% - 4px) / 2px 2px
+      no-repeat,
+    white;
+  image-rendering: pixelated;
+  position: relative;
+}
+
+.sprite__text::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 9px solid black;
+}
+
+.sprite__text::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid white;
+  z-index: 1;
+}
+
+.sprite__img {
+  width: auto;
+  padding: 20px;
+}

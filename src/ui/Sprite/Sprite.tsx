@@ -1,9 +1,11 @@
 import React from "react";
-import spriteOpen from "./avi-open.png";
-import spriteClosed from "./avi-closed.png";
+import spriteOpen from "../../assets/avi-open.png";
+import spriteClosed from "../../assets/avi-closed.png";
 import { useState, useEffect } from "react";
 
-interface SpritePanelProps {
+import "./Sprite.styles.css";
+
+interface Props {
   frames?: string[]; // array of image URLs, length should be 2 here
   width?: number; // width in pixels
   height?: number; // height in pixels
@@ -11,7 +13,7 @@ interface SpritePanelProps {
   text?: string[];
 }
 
-const SpritePanel: React.FC<SpritePanelProps> = ({
+const Sprite: React.FC<Props> = ({
   frames = [spriteOpen, spriteClosed],
   width = 64,
   height = 64,
@@ -29,14 +31,14 @@ const SpritePanel: React.FC<SpritePanelProps> = ({
   }, [frames.length, interval]);
 
   return (
-    <div className="sprite-panel">
-      <div className="speech">
-        {text.map((paragraph) => (
-          <p>{paragraph}</p>
+    <div className="sprite">
+      <div className="sprite__text">
+        {text.map((paragraph, index) => (
+          <p key={`paragraph-${index}`}>{paragraph}</p>
         ))}
       </div>
       <img
-        className="sprite-panel__img"
+        className="sprite__img"
         src={frames[currentFrame]}
         alt="pixel animation"
         width={width}
@@ -50,4 +52,4 @@ const SpritePanel: React.FC<SpritePanelProps> = ({
   );
 };
 
-export default SpritePanel;
+export default Sprite;

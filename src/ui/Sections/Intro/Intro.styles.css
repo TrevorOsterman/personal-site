@@ -1,0 +1,21 @@
+.intro {
+  display: flex;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  gap: 80px;
+}
+
+.intro__avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.intro__ps {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  text-align: justify;
+}
