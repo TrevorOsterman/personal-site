@@ -44,3 +44,15 @@ body {
 .container::-webkit-scrollbar {
   display: none;
 }
+
+.main-heading {
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+  margin: 0;
+}

@@ -1,7 +1,7 @@
 .scroll-arrow__text {
   position: fixed;
-  bottom: 60px;
-  left: 150px;
+  bottom: 50px;
+  left: 50%;
   transform: translateX(-50%);
   color: #000;
   font-size: 1.2rem;
@@ -14,7 +14,7 @@
 .scroll-arrow {
   position: fixed;
   bottom: 20px;
-  left: 150px;
+  left: 50%;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;

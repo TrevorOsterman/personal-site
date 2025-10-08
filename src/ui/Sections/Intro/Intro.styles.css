@@ -1,14 +1,33 @@
 .intro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px;
   width: 100%;
-  gap: 150px;
+  gap: 30px;
   height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex-shrink: 0;
+}
+
+.intro__heading {
+  font-family: "Jacquard 12", system-ui;
+  font-size: 9rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
 }
 
 .intro__avatar {
