@@ -1,0 +1,81 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.intro {
+  display: flex;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  padding 30px;
+  width: 100%;
+  gap:80px
+}
+
+.sprite__container {
+  display: flex;
+  justify-content: center;
+}
+
+.intro__ps {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  text-align: justify;
+}
+
+.info-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-grid {
+  display: flex;
+  width: 100%;
+}
+
+.sprite-panel {
+  display: flex;
+  width: 30%;
+  }
+
+  .speech {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .sprite-panel__img {
+    width: auto;
+}
+
+.sprite-panel__img {
+  width: auto;
+  padding: 20px;
+}
+
+.info-content {
+  width: 100%;
+  text-align: justify;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60vw;
+  margin: auto;
+}
