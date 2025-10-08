@@ -4,7 +4,7 @@
   align-items: center;
   padding: 30px;
   width: 100%;
-  gap: 80px;
+  gap: 150px;
   height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -27,6 +27,6 @@
 .intro__ps p {
   display: flex;
   margin: 7px 0;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }

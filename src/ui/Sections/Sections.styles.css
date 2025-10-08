@@ -53,6 +53,8 @@
   height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  font-size: 1.5rem;
+  gap: 20px;
 }
 
 .section__heading-group {
@@ -75,4 +77,20 @@
   display: flex;
   width: 100%;
   justify-content: flex-start;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.section__projects__project {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section__image {
+  width: 100%;
 }

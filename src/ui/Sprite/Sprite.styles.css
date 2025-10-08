@@ -1,6 +1,7 @@
 .sprite {
   display: flex;
   margin: auto;
+  gap: 15px;
 }
 
 .sprite__text {
