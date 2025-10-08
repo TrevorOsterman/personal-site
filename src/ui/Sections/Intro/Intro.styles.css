@@ -1,11 +1,14 @@
 .intro {
   display: flex;
-  grid-template-columns: 1fr 2fr;
   justify-content: center;
   align-items: center;
   padding: 30px;
   width: 100%;
   gap: 80px;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  flex-shrink: 0;
 }
 
 .intro__avatar {
@@ -16,6 +19,14 @@
 .intro__ps {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 50%;
   text-align: justify;
+}
+
+.intro__ps p {
+  display: flex;
+  margin: 7px 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }

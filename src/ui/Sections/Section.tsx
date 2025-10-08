@@ -1,18 +1,14 @@
 import React from "react";
-import Sprite from "../Sprite/Sprite";
 
 const Section: React.FC<{
-  title: string;
-  speechText: string[];
+  id: string;
+  sectionRef: (element: HTMLElement | null) => void;
+  setCurrentSection: (section: string) => void;
   children: React.ReactNode;
-}> = ({ title, speechText, children }) => {
+}> = ({ id, sectionRef, children }) => {
   return (
-    <section className="section">
-      <div className="section__heading-group">
-        <h1 className="section__heading">{title}</h1>
-        <Sprite text={speechText || ["I'm a placeholder!"]} />
-      </div>
-      <div className="section__content">{children}</div>
+    <section className="section" ref={sectionRef} data-section-id={id}>
+      {children}
     </section>
   );
 };

@@ -20,7 +20,8 @@ const Intro: React.FC = () => {
 
       <div className="intro__ps">
         <p>
-          Hello! My name is Trevor Osterman, welcome to my interactive resume.
+          Hello and welcome! My name is Trevor Osterman, and I appreciate you
+          taking the time to view my portfolio.
         </p>
         <p>
           I am a full stack web developer with experience in loads of fun and
@@ -29,8 +30,8 @@ const Intro: React.FC = () => {
           opportunities to learn and grow.
         </p>
         <p>
-          When you're ready, scroll down and I'll tell you a bit more about my
-          work experience.
+          When you're ready, scroll down and I'll tell you a bit more about
+          myself.
         </p>
       </div>
     </section>
