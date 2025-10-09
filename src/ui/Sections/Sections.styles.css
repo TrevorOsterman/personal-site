@@ -4,7 +4,6 @@
   width: 80vw;
   max-width: 80vw;
   margin: auto;
-  gap: 50px;
   align-items: flex-start;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -101,4 +100,40 @@
 
 .section__image {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sections {
+    width: 90vw;
+    max-width: 90vw;
+  }
+
+  .section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+  }
+
+  .sections-nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-width: unset;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-top: 10%;
+  }
+
+  .sections-nav h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .section__content {
+    width: 100%;
+  }
+
+  .tech-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

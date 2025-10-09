@@ -48,3 +48,38 @@
   font-size: 1.8rem;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  .intro {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .intro__heading {
+    font-size: 4rem;
+  }
+
+  .intro__content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .intro__avatar {
+    width: 100%;
+  }
+
+  .intro__avatar img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .intro__ps {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .intro__ps p {
+    font-size: 1.2rem;
+  }
+}
