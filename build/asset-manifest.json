@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/personal-site/static/css/main.bf02ca54.css",
+    "main.js": "/personal-site/static/js/main.880392bd.js",
+    "static/media/tinfy.png": "/personal-site/static/media/tinfy.082f82d636f14cc8f03a.png",
+    "index.html": "/personal-site/index.html",
+    "main.bf02ca54.css.map": "/personal-site/static/css/main.bf02ca54.css.map",
+    "main.880392bd.js.map": "/personal-site/static/js/main.880392bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf02ca54.css",
+    "static/js/main.880392bd.js"
+  ]
+}
