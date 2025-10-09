@@ -44,22 +44,26 @@ const Navigation: React.FC<Props> = ({ currentSection }) => {
         Intro
       </button>
       <button
-        className={`nav-button ${currentSection === "about" ? "active" : ""}`}
-        onClick={() => scrollToSection("about")}
-      >
-        About
-      </button>
-      <button
-        className={`nav-button ${currentSection === "experience" ? "active" : ""}`}
+        className={`nav-button ${
+          currentSection === "experience" ? "active" : ""
+        }`}
         onClick={() => scrollToSection("experience")}
       >
         Experience
       </button>
       <button
-        className={`nav-button ${currentSection === "projects" ? "active" : ""}`}
+        className={`nav-button ${
+          currentSection === "projects" ? "active" : ""
+        }`}
         onClick={() => scrollToSection("projects")}
       >
         Projects
+      </button>
+      <button
+        className={`nav-button ${currentSection === "about" ? "active" : ""}`}
+        onClick={() => scrollToSection("about")}
+      >
+        About
       </button>
     </nav>
   );
