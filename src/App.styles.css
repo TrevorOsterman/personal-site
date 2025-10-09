@@ -39,6 +39,7 @@ body {
   font: 1.2rem "Tiny5", sans-serif;
   font-style: normal;
   background-color: #e4e4a9;
+  padding-top: 100px;
 }
 
 .container::-webkit-scrollbar {

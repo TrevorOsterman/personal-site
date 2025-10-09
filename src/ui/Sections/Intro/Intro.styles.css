@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   gap: 30px;
-  height: calc(100vh);
+  min-height: calc(100vh);
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex-shrink: 0;
@@ -52,7 +52,7 @@
 @media (max-width: 768px) {
   .intro {
     gap: 20px;
-    padding: 20px;
+    padding: 10vh 20px 0;
   }
 
   .intro__heading {

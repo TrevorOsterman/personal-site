@@ -27,9 +27,9 @@ const Intro: React.FC = () => {
           </p>
           <p>
             I am a full stack web developer with experience in loads of fun and
-            useful tools and technologies. My journey with engineering so far has
-            been a fun and rewarding experience, and I'm always looking for new
-            opportunities to learn and grow.
+            useful tools and technologies. My journey with engineering so far
+            has been a fun and rewarding experience, and I'm always looking for
+            new opportunities to learn and grow.
           </p>
           <p>
             When you're ready, scroll down and I'll tell you a bit more about
