@@ -16,8 +16,8 @@ const ScrollArrow: React.FC<Props> = ({ currentSection }) => {
     const nextSection = sections[currentIndex + 1];
 
     if (nextSection === "about") {
-      // Scroll to the sections-container first
-      const sectionsContainer = document.querySelector(".sections-container");
+      // Scroll to the sections first
+      const sectionsContainer = document.querySelector(".sections");
       if (sectionsContainer) {
         sectionsContainer.scrollIntoView({ behavior: "smooth" });
       }
@@ -28,7 +28,7 @@ const ScrollArrow: React.FC<Props> = ({ currentSection }) => {
       }
     } else {
       // For experience and projects, scroll within sections-content
-      const sectionsContainer = document.querySelector(".sections-container");
+      const sectionsContainer = document.querySelector(".sections");
       if (sectionsContainer) {
         sectionsContainer.scrollIntoView({ behavior: "smooth" });
         setTimeout(() => {
