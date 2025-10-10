@@ -48,10 +48,13 @@ const ScrollArrow: React.FC<Props> = ({ currentSection }) => {
   }
 
   return (
-    <div className="scroll-arrow__container">
-      <span className="scroll-arrow__text">
-        Next section: {sections[currentIndex + 1]}
-      </span>
+    <div
+      className={`scroll-arrow__container ${
+        currentSection !== "intro" ? "scroll-arrow__container--left" : ""
+      }`}
+    >
+      <span className="scroll-arrow__text">Next section:</span>
+      <span className="scroll-arrow__text">{sections[currentIndex + 1]}</span>
       <button
         className="scroll-arrow"
         onClick={scrollToNextSection}
