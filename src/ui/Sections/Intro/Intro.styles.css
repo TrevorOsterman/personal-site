@@ -4,11 +4,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1400px;
   gap: 30px;
   min-height: calc(100vh);
   scroll-snap-align: start;
   scroll-snap-stop: always;
   flex-shrink: 0;
+  margin: auto;
 }
 
 .intro__heading {
@@ -23,10 +25,10 @@
 .intro__content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 150px;
-  width: 100%;
+  gap: 100px;
+  width: 80%;
 }
 
 .intro__avatar {
@@ -38,7 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 50%;
+  /* max-width: 50%; */
   text-align: justify;
 }
 
@@ -52,7 +54,7 @@
 @media (max-width: 768px) {
   .intro {
     gap: 20px;
-    padding: 10vh 20px 0;
+    padding: 0 20px 0;
   }
 
   .intro__heading {

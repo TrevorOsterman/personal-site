@@ -2,7 +2,6 @@
   position: fixed;
   bottom: 0;
   left: 50%;
-  min-width: 10vw;
   height: 100px;
   pointer-events: none;
   display: flex;
@@ -13,7 +12,7 @@
 }
 
 .scroll-arrow__container--left {
-  left: 5vw;
+  left: 2vw;
 }
 
 .scroll-arrow__text {
@@ -29,8 +28,8 @@
 
 .scroll-arrow {
   bottom: 20px;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
   border: none;
   display: flex;

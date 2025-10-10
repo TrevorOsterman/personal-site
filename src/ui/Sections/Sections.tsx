@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Section from "./Section";
-import SectionHeading from "./SectionHeading";
 import tinfy from "../../assets/tinfy.png";
 
 import "./Sections.styles.css";
@@ -22,9 +21,9 @@ const Sections: React.FC<Props> = ({
 
   useEffect(() => {
     const dialogMap: { [key: string]: string[] } = {
-      about: ["Here's some additional information about me."],
-      experience: ["Let me tell you about my work experience."],
-      projects: ["Check out some of my recent projects."],
+      about: ["Here's some additional information about me!"],
+      experience: ["Let me tell you about my work experience!"],
+      projects: ["Check out some of my recent projects!"],
     };
 
     if (dialogMap[currentSection]) {
@@ -140,7 +139,7 @@ const Sections: React.FC<Props> = ({
         setCurrentSection={setCurrentSection}
       >
         <p>In my spare time, I'm currently working on a project or two.</p>
-        <div>
+        <div className="section__projects__project">
           <h3>
             <i>This Is Not For You</i>
           </h3>

@@ -23,6 +23,7 @@
   image-rendering: pixelated;
   position: relative;
   border: 6px double black;
+  font-size: 1.2rem;
 }
 
 .sprite__img {
