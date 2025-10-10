@@ -13,8 +13,6 @@ const Navigation: React.FC<Props> = ({ currentSection }) => {
     if (sectionId === "intro") {
       targetElement = document.querySelector(".intro");
     } else {
-      // For other sections, we need to scroll the container to sections
-      // then scroll the sections-content to the specific section
       const sectionsContainer = document.querySelector(".sections");
       if (sectionsContainer) {
         sectionsContainer.scrollIntoView({ behavior: "smooth" });
@@ -63,7 +61,7 @@ const Navigation: React.FC<Props> = ({ currentSection }) => {
         className={`nav-button ${currentSection === "about" ? "active" : ""}`}
         onClick={() => scrollToSection("about")}
       >
-        About
+        More
       </button>
     </nav>
   );

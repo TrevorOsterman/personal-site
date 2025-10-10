@@ -45,7 +45,7 @@
   background-color: #e4e4a9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navigation {
     height: 50px;
     gap: 10px;

@@ -51,7 +51,7 @@
   transform: scale(0.95);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .scroll-arrow__container {
     display: none;
   }
